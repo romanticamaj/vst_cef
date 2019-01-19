@@ -1,0 +1,23 @@
+﻿Build started 2018/10/7 下午 04:28:13.
+     1>Project "D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\again\win\again.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I../../../../.. /ID:\vstsdk2.4\public.sdk\source\vst2.x /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D AGAIN_EXPORTS /D VST_64BIT_PLATFORM=1 /D _CRT_SECURE_NO_DEPRECATE=1 /D _WINDLL /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ..\..\..\..\source\vst2.x\audioeffect.cpp ..\..\..\..\source\vst2.x\audioeffectx.cpp ..\..\..\..\source\vst2.x\vstplugmain.cpp ..\source\again.cpp ..\source\ageditor.cpp
+         ageditor.cpp
+         again.cpp
+         vstplugmain.cpp
+         audioeffectx.cpp
+         audioeffect.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"../../win/vstplug.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.lib" /MACHINE:X64 /DLL x64\Debug\audioeffect.obj
+         x64\Debug\audioeffectx.obj
+         x64\Debug\vstplugmain.obj
+         x64\Debug\again.obj
+         x64\Debug\ageditor.obj
+            Creating library D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.lib and object D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.exp
+         again.vcxproj -> D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\win\x64\Debug\again.dll
+     1>Done Building Project "D:\vst_cef\vstsdk2.4\public.sdk\samples\vst2.x\again\win\again.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.55

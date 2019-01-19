@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Volume Controller - Gary Hsieh</title>
+<script language="JavaScript"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function () {
+        $("#slider-vertical").slider({
+            orientation: "vertical",
+            range: "min",
+            min: 0,
+            max: 100,
+            value: 60,
+            slide: function (event, ui) {
+                $("#amount").val(ui.value);
+
+                // Send a query to the browser process.
+                window.cefQuery({
+                    request: 'MessageRouterTest:' + ui.value,
+                    onSuccess: function (response) { },
+                    onFailure: function (error_code, error_message) { }
+                });
+            }
+        });
+        $("#amount").val($("#slider-vertical").slider("value"));
+    });
+</script>
+
+
+</head>
+<body bgcolor="white">
+
+<p>
+    <label for="amount">Volume:</label>
+    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+
+<div id="slider-vertical" style="height:200px;"></div>
+
+</body>
+</html>
